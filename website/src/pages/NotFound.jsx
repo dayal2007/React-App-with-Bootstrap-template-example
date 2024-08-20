@@ -1,10 +1,13 @@
 import React from 'react';
+import Loading from './../components/Loading';
 
 function NotFound() {
+
   return (
-
-            <p>Not Found</p>
-
+  <>
+    <Loading></Loading>
+    <p>Not Found</p>
+  </>
   );
 }
 

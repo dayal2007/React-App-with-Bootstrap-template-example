@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Loading from './../components/Loading';
 
 function Policy() {
+
   return (
-
-            <p>Policy</p>
-
+  <>
+    <Loading></Loading>
+    <p>Policy</p>
+  </>
   );
 }
 

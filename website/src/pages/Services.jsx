@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Loading from './../components/Loading';
 
 function Services() {
+
   return (
-
-            <p>Services</p>
-
+  <>
+    <Loading></Loading>
+    <p>Services</p>
+  </>  
   );
 }
 

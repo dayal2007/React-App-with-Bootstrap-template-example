@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Loading from './../components/Loading';
 
 function About() {
-  return (
 
-            <p>About us</p>
+  return (
+  <>
+    <Loading></Loading>
+    <p>About us</p>
+  </>
+            
 
   );
 }

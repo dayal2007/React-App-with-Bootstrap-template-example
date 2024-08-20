@@ -1,10 +1,13 @@
 import React from 'react';
+import Loading from './../components/Loading';
 
 function Home() {
+
   return (
-
-            <p>Home</p>
-
+  <>
+  <Loading></Loading>
+  <p>Home</p>
+  </>
   );
 }
 

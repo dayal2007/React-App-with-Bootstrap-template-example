@@ -16,24 +16,6 @@ import TopAdvertisement from './components/TopAdvertisement'
 
 function App() {
 
-  const [loading, setLoading] = useState(true);
-  
-
-  useEffect(() => {
-    // Simulate a loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // 2 seconds delay
-
-    return () => clearTimeout(timer); // Cleanup on unmount
-
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
-
-
   return (
     <Router>
       <>
