@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
-import { useMatch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Loading from './components/Loading';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
