@@ -9,7 +9,8 @@ function TopAdvertisement() {
     useEffect(() => {
         const lightbox = GLightbox({
             selector: '.glightbox',
-            autoplayVideos: true, // Optional: to autoplay videos
+            touchNavigation: true,
+            autoplayVideos: false, // Optional: to autoplay videos
         });
     }, []);
 
