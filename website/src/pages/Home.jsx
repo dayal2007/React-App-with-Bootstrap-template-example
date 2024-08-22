@@ -15,20 +15,20 @@ function Home() {
   return (
   <>
     <Loading></Loading>
-    <main class="main">
-    <section id="alt-services" class="alt-services section pt-0">
+    <main className="main">
+    <section id="alt-services" className="alt-services section pt-0">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div className="row gy-4">
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="" />
+          <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div className="service-item position-relative">
+              <div className="img">
+                <img src="assets/img/services-1.jpg" className="img-fluid" alt="" />
               </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
+              <div className="details">
+                <a href="service-details.html" className="stretched-link">
                   <h3>Nesciunt Mete</h3>
                 </a>
                 <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
@@ -36,13 +36,13 @@ function Home() {
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="" />
+          <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+            <div className="service-item position-relative">
+              <div className="img">
+                <img src="assets/img/services-2.jpg" className="img-fluid" alt="" />
               </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
+              <div className="details">
+                <a href="service-details.html" className="stretched-link">
                   <h3>Eosle Commodi</h3>
                 </a>
                 <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
@@ -50,13 +50,13 @@ function Home() {
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="" />
+          <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+            <div className="service-item position-relative">
+              <div className="img">
+                <img src="assets/img/services-3.jpg" className="img-fluid" alt="" />
               </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
+              <div className="details">
+                <a href="service-details.html" className="stretched-link">
                   <h3>Ledo Markt</h3>
                 </a>
                 <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
@@ -64,17 +64,17 @@ function Home() {
             </div>
           </div> 
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-4.jpg" class="img-fluid" alt="" />
+          <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+            <div className="service-item position-relative">
+              <div className="img">
+                <img src="assets/img/services-4.jpg" className="img-fluid" alt="" />
               </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
+              <div className="details">
+                <a href="service-details.html" className="stretched-link">
                   <h3>Asperiores Commodit</h3>
                 </a>
                 <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="service-details.html" class="stretched-link"></a>
+                <a href="service-details.html" className="stretched-link"></a>
               </div>
             </div>
           </div>
@@ -84,6 +84,43 @@ function Home() {
       </div>
 
     </section>
+
+    <section id="clients" className="clients section light-background">
+      <div className="container-fluid pt-0" data-aos="fade-up">
+
+        <div className="row gy-4">
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-1.png" className="img-fluid" alt="" />
+          </div>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-2.png" className="img-fluid" alt="" />
+          </div>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-3.png" className="img-fluid" alt="" />
+          </div>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-4.png" className="img-fluid" alt="" />
+          </div>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-5.png" className="img-fluid" alt="" />
+          </div>
+
+          <div className="col-xl-2 col-md-3 col-6 client-logo mt-0">
+            <img src="assets/img/clients/client-6.png" className="img-fluid" alt="" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
     </main>
   </>
   );

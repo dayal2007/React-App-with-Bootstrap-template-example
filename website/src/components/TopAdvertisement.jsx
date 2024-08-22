@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useMatch } from 'react-router-dom';
+
+import 'glightbox/dist/css/glightbox.min.css';
+import GLightbox from 'glightbox';
 
 function TopAdvertisement() {
     const isHome = useMatch('/');
+    useEffect(() => {
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            autoplayVideos: true, // Optional: to autoplay videos
+        });
+    }, []);
 
     return(
     isHome ? 
@@ -27,7 +36,8 @@ function TopAdvertisement() {
                 <p>We are team of talented designers making advertisements for you.</p>
                 <div className="d-flex">
                 <a href="#about" className="btn-get-started">Get&nbsp;Started</a>&nbsp;
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox btn-watch-video d-flex align-items-center btn-get-started">Video</a>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"  type="video" source="youtube" className="glightbox btn-watch-video d-flex align-items-center btn-get-started" 
+            data-glightbox="youtube">Video</a>
                 </div>
             </div>
             <div className="col-6 order-1 order-2 hero-img">
