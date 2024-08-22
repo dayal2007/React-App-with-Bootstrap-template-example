@@ -5,8 +5,10 @@ function Contact() {
  
   return (
   <>
-    <Loading></Loading>
-    <p>Contact</p>
+    <main class="main">
+      <Loading></Loading>
+      <p>Contact</p>
+    </main>  
   </>
   );
 }

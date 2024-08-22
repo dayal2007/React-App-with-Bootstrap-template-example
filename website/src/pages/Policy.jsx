@@ -6,7 +6,9 @@ function Policy() {
   return (
   <>
     <Loading></Loading>
-    <p>Policy</p>
+    <main class="main">
+      <p>Policy</p>
+    </main>
   </>
   );
 }

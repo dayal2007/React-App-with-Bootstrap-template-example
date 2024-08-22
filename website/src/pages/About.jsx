@@ -5,8 +5,10 @@ function About() {
 
   return (
   <>
-    <Loading></Loading>
-    <p>About us</p>
+    <main class="main">
+      <Loading></Loading>
+      <p>About us</p>
+    </main>  
   </>
             
 
