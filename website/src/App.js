@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+//import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap 
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,7 +13,6 @@ import Contact from './pages/Contact';
 import Policy from './pages/Policy';
 import NotFound from './pages/NotFound';
 import TopAdvertisement from './components/TopAdvertisement'
-
 
 function App() {
 
