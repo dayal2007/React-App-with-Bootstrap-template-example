@@ -6,7 +6,9 @@ function Services() {
   return (
   <>
     <Loading></Loading>
-    <p>Services</p>
+    <main class="main">
+      <p>Services</p>
+    </main>
   </>  
   );
 }

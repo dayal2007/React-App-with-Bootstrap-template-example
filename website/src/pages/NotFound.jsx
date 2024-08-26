@@ -6,7 +6,9 @@ function NotFound() {
   return (
   <>
     <Loading></Loading>
-    <p>Not Found</p>
+    <main class="main">
+      <p>Not Found</p>  
+    </main>
   </>
   );
 }
