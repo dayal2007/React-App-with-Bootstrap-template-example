@@ -24,19 +24,19 @@ function Header() {
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
-    const [showMenu, setShowMenu] = useState(false);
-
-    const toggleMenu = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
         setShowMenu(!showMenu);
-    };
-  return (
+  };
+
+return (
 <header id="header" className="header d-flex align-items-center sticky-top">
 <div className="container-fluid position-relative d-flex align-items-center">
   <NavLink className="logo d-flex align-items-center me-auto" to="/">
     <img src="assets/logo.svg" alt="" />
   </NavLink>
   <nav id="navmenu" className="navmenu">
-    <ul>
+    <ul onClick={mobileNavToogle}>
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/about">About</NavLink></li>
       <li><NavLink to="/services">Services</NavLink></li>
