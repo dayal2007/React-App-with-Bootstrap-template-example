@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useMatch } from 'react-router-dom';
-
 import 'glightbox/dist/css/glightbox.min.css';
 import GLightbox from 'glightbox';
 
@@ -10,7 +9,7 @@ function TopAdvertisement() {
         const lightbox = GLightbox({
             selector: '.glightbox',
             touchNavigation: true,
-            autoplayVideos: false, // Optional: to autoplay videos
+            autoplayVideos: true, // Optional: to autoplay videos
         });
     }, []);
 
