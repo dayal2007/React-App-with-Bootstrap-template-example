@@ -1,33 +1,39 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Loading from './../components/Loading';
 
 function Contact() {
- 
-  const [data, setData] = useState({ title: '', body: '' });
+
+  const [data, setData] = useState({ name: '', email: '', message:'' });
   const handleChange = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
   };
 
+
   const handleSubmit = async (e) => {
+
+
+
+
+
+
     e.preventDefault();
 
-    const url = 'https://mydeals.ie/api_test.php'; // Your API endpoint
+    const url = 'https://sambhu.mydeals.ie/api_test.php'; // Your API endpoint
     try {
-        const response = await fetch(url, {
-            method: 'POST',
+        const response = await axios.post(url, data, {
+            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data),
         });
-
-        const result = await response.json();
-        console.log('Success:', result);
+        console.log('Success:', response.data);
     } catch (error) {
         console.error('Error:', error);
     }
-};
+  };
+
   
   return (
   <>
@@ -84,7 +90,6 @@ function Contact() {
                     className="form-control" 
                     placeholder="Your Name" 
                     required="" 
-                  
                   />
                 </div>
 
@@ -145,6 +150,6 @@ function Contact() {
     </main>  
   </>
   );
-}
+};
 
 export default Contact;
