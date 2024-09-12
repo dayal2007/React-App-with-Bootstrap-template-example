@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 //import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap 
@@ -12,14 +12,22 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Policy from './pages/Policy';
 import NotFound from './pages/NotFound';
-import TopAdvertisement from './components/TopAdvertisement'
+import TopAdvertisement from './components/TopAdvertisement';
 
-function App() {
+const TopAdvertisementDisplay = () => {
+  const location = useLocation();
 
   return (
-    <Router>
       <>
-        <TopAdvertisement></TopAdvertisement>
+          {location.pathname === '/' && <TopAdvertisement />} {}
+      </>
+  );
+};
+  
+function App() {
+  return (
+    <Router>
+        <TopAdvertisementDisplay></TopAdvertisementDisplay>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,7 +38,6 @@ function App() {
           <Route path="*" element={<NotFound />} /> {/* Catch-all for 404 */}
         </Routes>
         <Footer />
-      </>
     </Router>
   );
 }
