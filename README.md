@@ -1,1 +1,1 @@
-"Sample react app with bootstrap template" 
+"Sample React App with bootstrap template" 
