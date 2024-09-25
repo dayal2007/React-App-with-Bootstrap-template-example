@@ -1,1 +1,1 @@
-"# basic_frontend" 
+"Sample react app with bootstrap template" 
